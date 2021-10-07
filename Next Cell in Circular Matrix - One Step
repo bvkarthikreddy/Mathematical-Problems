@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int t;
+  	cin>>t;
+  	while(t--)
+    {
+      int r,c,i,j;
+      char d;
+      cin>>r>>c>>i>>j>>d;
+      if(d=='U')
+      {cout<<(i-1+r)%r<<" "<<j<<endl;}
+      else if(d=='R')
+      {cout<<i<<" "<<(j+1)%c<<endl;}
+      else if(d=='L')
+      {cout<<i<<" "<<(j-1+c)%c<<endl;}
+      else if(d=='D')
+      {cout<<(i+1)%r<<" "<<j<<endl;}
+    }
+    return 0;
+}
