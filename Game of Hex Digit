@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+  	int t;
+  	cin>> t;
+  	while(t--)
+    {
+      char a;
+      cin>>a;
+      cout<<a<<" ";
+      if(a>='0' && a<='9')
+      {
+        cout<<a;
+      }
+      else 
+      {
+        cout<<10+(int)(a-'A');
+      }
+      cout<<" "<<int(a)<<endl;
+    }
+      
+	
+	return 0;
+}
