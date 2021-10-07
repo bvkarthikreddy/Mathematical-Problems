@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ROWS    100
+#define COLS    100
+
+void printUpperLowerTriangleSum2(int a[ROWS][COLS], int r, int c){
+  int i,j,sut=0,slt=0;
+  for(i=0;i<r;i++)
+  {
+    for(j=0;j<c;j++)
+    {
+      if(i+j<r-1)
+      {
+        sut=sut+a[i][j];
+      }
+    }
+  }
+  for(i=0;i<r;i++)
+  {
+    for(j=0;j<c;j++)
+    {
+      if(i+j>=r)
+      {
+        slt=slt+a[i][j];
+      }
+    }
+  }
+   
+}
